@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- ↓ this is the description that shows up in the search engine ↓ -->
+    <meta
+      name="description"
+      content="ABGradeManager system is a leading technology solution to maintain classroom, student, and assignment information.
+      Track information for all of your classrooms with ease"
+    />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/lab3.css" />
+  </head>
+  <body>
+    <section class="showcase">
+      <header>
+        <h2 class="logo">ABGradeManager</h2>
+        <div class="toggle"></div>
+      </header>
+      <video src="videos/teacherwithclass.mp4" muted loop autoplay></video>
+      <div class="overlay"></div>
+      <div class="text">
+        <h2>Welcome!</h2>
+        <h3>Please enter the classrooms</h3>
+        <a href="/classrooms/classrooms.html">ENTER</a>
+      </div>
+      <ul class="social">
+        <li>
+          <a href="#"><img src="https://i.ibb.co/x7P24fL/facebook.png" /></a>
+        </li>
+        <li>
+          <a href="#"><img src="https://i.ibb.co/Wnxq2Nq/twitter.png" /></a>
+        </li>
+        <li>
+          <a href="#"><img src="https://i.ibb.co/ySwtH4B/instagram.png" /></a>
+        </li>
+      </ul>
+    </section>
+    <div class="menu">
+      <ul>
+        <li><a href="Index.html">Home</a></li>
+        <li><a href="/classrooms/classrooms.html">Classrooms</a></li>
+        <li><a href="mailto:alexbennett12@live.com">Contact</a></li>
+      </ul>
+    </div>
+
+    <script>
+      const menuToggle = document.querySelector(".toggle");
+      const showcase = document.querySelector(".showcase");
+
+      menuToggle.addEventListener("click", () => {
+        menuToggle.classList.toggle("active");
+        showcase.classList.toggle("active");
+      });
+    </script>
+  </body>
+</html>

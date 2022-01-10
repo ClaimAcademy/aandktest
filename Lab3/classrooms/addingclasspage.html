@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/classroom.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <nav>
+          <ul>
+            <li><a href="/Index.html">Home</a></li>
+            <li><a href="/classrooms/classrooms.html">Return</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <fieldset id="field">
+      <legend>Add Classroom</legend>
+      <input id="inpValue" type="text" />
+      <button type="button" id="btnInsert">Submit</button>
+    </fieldset>
+    <fieldset id="field">
+      <legend>Local Storage</legend>
+      <div class="lsOutPut"></div>
+    </fieldset>
+  </body>
+
+  <script>
+    const inpkey = "Classroom: ";
+    const inpValue = document.getElementById("inpValue");
+    const btnInsert = document.getElementById("btnInsert");
+    const lsOutPut = document.getElementById("lsOutPut");
+
+    btnInsert.onclick = function () {
+      const value = inpValue.value;
+      const key = inpkey;
+
+      console.log(key);
+      console.log(value);
+
+      if (key && value) {
+        localStorage.setItem(key, value);
+        location.reload();
+      }
+    };
+
+    // for (let i = 0; i < localStorage.length; i++) {
+    //   const key = localStorage.value(i);
+    //   const value = localStorage.getItem(key);
+
+    //   lsOutPut.innerHTML += `${value}`;
+    // }
+  </script>
+</html>
